@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Password Generator App</title>
+    <script src="https://kit.fontawesome.com/2e000cecf5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Password Generator</h1>
+        <p>Created by <a href="https://github.com/KariminK">Karimin</a></p>
+    </header>
+    <main>
+        <input type="text" name="generated-password" id="generated-password" placeholder="generated password" readonly>
+        <form action="#">
+            <ul class="options">
+                <li class="option">
+                    <label for="smallLetters">Small letters 
+                        <input class="checkbox" type="checkbox" name="smallLetters" id="smallLetters" checked>
+                        <div class="checkbox-content">
+                            <div class="checkbox-thumb">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </label>
+                </li>
+                <li class="option">
+                    <label for="bigLetters">Big Letters 
+                        <input class="checkbox" type="checkbox" name="bigLetters" id="bigLetters" checked>
+                        <div class="checkbox-content">
+                            <div class="checkbox-thumb">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </label>
+                </li>
+                <li class="option">
+                    <label for="numbers">Numbers 
+                        <input class="checkbox" type="checkbox" name="numbers" id="numbers" checked>
+                        <div class="checkbox-content">
+                            <div class="checkbox-thumb">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </label>
+                </li>
+            </ul>
+            <input type="range" name="passwordLength" id="password-length" value="8" min="4" max="32">
+            <p id="password-length-txt">Password length: 8</p>
+        </form>
+        <button id="copy-to-clipboard">Copy password to clipboard</button>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
