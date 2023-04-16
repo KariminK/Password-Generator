@@ -47,7 +47,7 @@ copyToClipboardBtn.addEventListener("click", async ()=>{
             copyToClipboardBtn.innerText = "Copy password to clipboard";
         }, 2000);
     }catch(err){
-        copyToClipboardBtn.innerText = "Failed to copy";
+        copyToClipboardBtn.innerText = "Failed to copy: "+err;
     }
 })
 checkboxes.forEach(checkbox=>{
