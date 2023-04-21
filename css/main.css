@@ -148,8 +148,13 @@ main form {
   box-shadow: 0px 0px 10px rgb(204, 36, 36);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   main {
     width: 90vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  main {
+    width: 100vw;
   }
 }/*# sourceMappingURL=main.css.map */
